@@ -16,5 +16,6 @@ module Pr1805Journey
     # -- all .rb files in that directory are automatically loaded.
     config.action_view.embed_authenticity_token_in_remote_forms = true
     config.tinymce.install = :compile
+    config.assets.initialize_on_precompile = false
   end
 end

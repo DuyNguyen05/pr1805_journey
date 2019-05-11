@@ -10,9 +10,6 @@ class PostsController < ApplicationController
     @notification.update opened_at: Time.current if params[:notification_id]
     @avg_rate = @post.rates.average(:star)&.round(2) || 0
     @rate_user = @post.rates.pluck(:user_id)
-    return true if @post.status == 'archived'
-    flash[:danger] = "Post da bi block. Khong the truy cap!"
-    redirect_to root_path
   end
 
   def new
@@ -58,6 +55,9 @@ class PostsController < ApplicationController
 
   def load_post
    @post = Post.find_by id: params[:id]
+   return true if @post.status == 'archived'
+   flash[:danger] = "Post da bi block. Khong the truy cap!"
+   redirect_to root_path
   end
 
   def correct_post
