@@ -3,7 +3,8 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
-gem "letter_opener", :group => :development
+#gem "letter_opener", :group => :development
+gem "letter_opener",  :git => "git://github.com/alexrothenberg/letter_opener.git", :branch => "on_a_server"
 gem "figaro"
 gem "mini_racer"
 gem "bcrypt", "3.1.12"
