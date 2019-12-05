@@ -1,0 +1,171 @@
+<% if logged_in? %>
+  <section class="articles-area section-padding-0-100">
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="mb-100">
+              <div class="view-buttn mt-md-4 mt-sm-4 mt-3">
+                <%= link_to "Create Post", new_post_path, class: "btn" %>
+              </div>
+              <br><hr>
+              <%= render @posts %>
+              <%= will_paginate @posts %>
+            </div>
+          </div>
+          <%= render "shared/place_is_max_post"%>
+        </div>
+    </div>
+  </section>
+<% else %>
+  <section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="about">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+      <div class="row">
+        <div class="col-lg-4 about-imgs-txt">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 text-center">
+              <i style="font-size:70px" class="fa fa-suitcase" aria-hidden="true"></i>
+            </div>
+            <div class="about-w3layouts-left col-lg-9 col-md-9 col-sm-9">
+              <h6 class="mb-lg-3 mb-2">Travel</h6>
+              <p>Let’s Explore The World Together</p>
+            </div>
+          </div>
+          <div class="row my-lg-5 my-md-4 my-3">
+            <div class="about-w3layouts-left col-lg-9 col-md-9 col-sm-9">
+              <h6 class="mb-lg-3 mb-2">Information</h6>
+              <p>More Information For Your Trip </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 text-center">
+              <i style="font-size:70px" class="fa fa-info" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 text-center">
+              <i style="font-size:70px" class="fa fa-map-marker" aria-hidden="true"></i>
+            </div>
+            <div class="about-w3layouts-left col-lg-9 col-md-9 col-sm-9">
+              <h6 class="mb-lg-3 mb-2">Discover</h6>
+              <p>Discover More New Places</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 about-imgs-txt">
+          <%= image_tag "ab1", alt: "news image", class: "img-fluid" %>
+        </div>
+        <div class="col-lg-4 col-md-6 text-right about-two-grids">
+          <h3 class="title mb-md-4 mb-sm-3 mb-3">We Are Sun* Journey</h3>
+          <div class="about-para-txt">
+            <p>
+              The world is so beautiful. Each place, each country has its own mystery.</p>
+              <p>Our favorite quotes all the time is
+                <br>
+               “Travel makes one modest. You see what a tiny place you occupy in the world.” <br>
+               -  <%= link_to "Gustav Flaubert",
+              "https://vi.wikipedia.org/wiki/Gustave_Flaubert" %></p>
+            <p>
+              "Life is short and the world is wide.
+              <br>
+              Let’s explore the world together!"
+              <br>
+              - <%= link_to "Duy Nguyen", "https://www.facebook.com/duynguyen.7397" %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="counter-reset">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 count-wthree-num text-center">
+          <h5 class="mb-lg-4 mb-md-4 mb-3">990+</h5>
+          <h4 class="mb-3">Users</h4>
+          <p>Friendly Community </p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 count-wthree-num text-center color-one">
+          <h5 class="mb-lg-4 mb-md-4 mb-3">64+</h5>
+          <h4 class="mb-3">Places</h4>
+          <p>Trendy and interesting checked-in places</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 count-wthree-num text-center color-two">
+          <h5 class="mb-lg-4 mb-md-4 mb-3">1000+</h5>
+          <h4 class="mb-3">Reviews</h4>
+          <p>Explore new and interesting things</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="clients py-lg-4 py-md-3 py-sm-3 py-3">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+              <%= image_tag "duy", alt: "news image", class: "img-fluid" %>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 clients-w3pvt-txt p-0">
+              <h4>Duy Nguyen</h4>
+              <p class="mt-2">Highly recommended! Superb experience
+              </p>
+            </div>
+          </div>
+          <div class="row mt-lg-4 mt-3">
+            <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+              <%= image_tag "c2", alt: "news image", class: "img-fluid" %>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 clients-w3pvt-txt p-0">
+              <h4>Rose Will</h4>
+              <p class="mt-2">Beautiful Website And So Many Experience For My Trip
+              </p>
+            </div>
+          </div>
+          <div class="row mt-lg-4 mt-3">
+            <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+              <%= image_tag "c3", alt: "news image", class: "img-fluid" %>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 clients-w3pvt-txt p-0">
+              <h4>Hulk</h4>
+              <p class="mt-2">Super Funny
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 main-title-text">
+          <h3 class="title">What People Say About Us</h3>
+        </div>
+        <div class="col-lg-4">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 clients-w3pvt-txt p-0">
+              <h4>Thao Nguyen</h4>
+              <p class="mt-2">Wonderful!
+              </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+              <%= image_tag "thao", alt: "news image", class: "img-fluid" %>
+            </div>
+          </div>
+          <div class="row mt-lg-4 mt-3">
+            <div class="col-lg-6 col-md-6 col-sm-6 clients-w3pvt-txt p-0">
+              <h4>Phuong Pham</h4>
+              <p class="mt-2">Everything is super!
+              </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+              <%= image_tag "phuong", alt: "news image", class: "img-fluid" %>
+            </div>
+          </div>
+          <div class="row mt-lg-4 mt-3">
+            <div class="col-lg-6 col-md-6 col-sm-6 clients-w3pvt-txt p-0">
+              <h4>Franky</h4>
+              <p class="mt-2">Everything was perfect and perfectly-arranged.
+              </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+              <%= image_tag "c4", alt: "news image", class: "img-fluid" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<% end %>

@@ -1,0 +1,22 @@
+<div class="single-articles-area style-2 d-flex flex-wrap mb-30 wow fadeInUp" data-wow-delay="300ms">
+  <div class="article-thumbnail">
+    <%= image_tag post.picture.presence || "travel" %>
+  </div>
+  <div class="article-content">
+    <h1><%= link_to post.title, post %></h1>
+    <div class="post-meta">
+        <a href="#" class="post-date">Posted <%= time_ago_in_words post.created_at %> ago.</a>
+        <%= link_to "Comments: ", post, class: "post-comments" %><%= post.comments.size  %>
+    </div>
+    <em>User Rating: <%= post.rates.size %></em>
+    <div class="star-rating" data-score= <%= post.rate %> ></div>
+    <br>
+    <hr>
+    <div class="post-meta">
+      <% if current_user? post.user  %>
+        <%= link_to "Edit", edit_post_path(post) %>
+        <%= link_to "Delete", post, method: :delete, data: {confirm: "Are you sure?"}%>
+      <% end %>
+    </div>
+  </div>
+</div>

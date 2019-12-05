@@ -1,0 +1,516 @@
+# Logfile created on 2019-12-05 10:39:24 +0700 by logger.rb/66358
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-12-05 10:39:24 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [b04ce4d9] Running /usr/bin/env mkdir -p /tmp as ubuntu@3.134.252.73
+ DEBUG [b04ce4d9] Command: /usr/bin/env mkdir -p /tmp
+  INFO [b04ce4d9] Finished in 6.122 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-pr1805_journey-production-duy.sh 0.0%
+  INFO Uploading /tmp/git-ssh-pr1805_journey-production-duy.sh 100.0%
+  INFO [a41952ac] Running /usr/bin/env chmod 700 /tmp/git-ssh-pr1805_journey-production-duy.sh as ubuntu@3.134.252.73
+ DEBUG [a41952ac] Command: /usr/bin/env chmod 700 /tmp/git-ssh-pr1805_journey-production-duy.sh
+  INFO [a41952ac] Finished in 1.333 seconds with exit status 0 (successful).
+  INFO [25823e92] Running /usr/bin/env git ls-remote git@github.com:awesome-academy/pr1805_journey.git HEAD as ubuntu@3.134.252.73
+ DEBUG [25823e92] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-pr1805_journey-production-duy.sh" ; /usr/bin/env git ls-remote git@github.com:awesome-academy/pr1805_journey.git HEAD )
+ DEBUG [25823e92] 	Warning: Permanently added the RSA host key for IP address '140.82.114.4' to the list of known hosts.
+ DEBUG [25823e92] 	
+ DEBUG [25823e92] 	40fc655113792c43ff86fdaee7ceb8f4477755b4
+ DEBUG [25823e92] 		HEAD
+  INFO [25823e92] Finished in 3.143 seconds with exit status 0 (successful).
+  INFO [f366d506] Running /usr/bin/env mkdir -p home/ubuntu/pr1805_journey/shared home/ubuntu/pr1805_journey/releases as ubuntu@3.134.252.73
+ DEBUG [f366d506] Command: /usr/bin/env mkdir -p home/ubuntu/pr1805_journey/shared home/ubuntu/pr1805_journey/releases
+  INFO [f366d506] Finished in 1.263 seconds with exit status 0 (successful).
+  INFO [dd8114c9] Running /usr/bin/env mkdir -p home/ubuntu/pr1805_journey/shared/log home/ubuntu/pr1805_journey/shared/tmp/pids home/ubuntu/pr1805_journey/shared/tmp/cache home/ubuntu/pr1805_journey/shared/tmp/sockets home/ubuntu/pr1805_journey/shared/vendor/bundle home/ubuntu/pr1805_journey/shared/public/system home/ubuntu/pr1805_journey/shared/public/uploads as ubuntu@3.134.252.73
+ DEBUG [dd8114c9] Command: /usr/bin/env mkdir -p home/ubuntu/pr1805_journey/shared/log home/ubuntu/pr1805_journey/shared/tmp/pids home/ubuntu/pr1805_journey/shared/tmp/cache home/ubuntu/pr1805_journey/shared/tmp/sockets home/ubuntu/pr1805_journey/shared/vendor/bundle home/ubuntu/pr1805_journey/shared/public/system home/ubuntu/pr1805_journey/shared/public/uploads
+  INFO [dd8114c9] Finished in 1.340 seconds with exit status 0 (successful).
+  INFO [e8e6dbf8] Running /usr/bin/env mkdir -p home/ubuntu/pr1805_journey/shared/config as ubuntu@3.134.252.73
+ DEBUG [e8e6dbf8] Command: /usr/bin/env mkdir -p home/ubuntu/pr1805_journey/shared/config
+  INFO [e8e6dbf8] Finished in 1.104 seconds with exit status 0 (successful).
+ DEBUG [da1f5077] Running [ -f home/ubuntu/pr1805_journey/shared/config/database.yml ] as ubuntu@3.134.252.73
+ DEBUG [da1f5077] Command: [ -f home/ubuntu/pr1805_journey/shared/config/database.yml ]
+ DEBUG [da1f5077] Finished in 1.433 seconds with exit status 1 (failed).
+ ERROR linked file home/ubuntu/pr1805_journey/shared/config/database.yml does not exist on 3.134.252.73
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-12-05 10:43:09 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [248f33d7] Running /usr/bin/env mkdir -p /tmp as ubuntu@3.134.252.73
+ DEBUG [248f33d7] Command: /usr/bin/env mkdir -p /tmp
+  INFO [248f33d7] Finished in 5.173 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-pr1805_journey-production-duy.sh 0.0%
+  INFO Uploading /tmp/git-ssh-pr1805_journey-production-duy.sh 100.0%
+  INFO [51899cf4] Running /usr/bin/env chmod 700 /tmp/git-ssh-pr1805_journey-production-duy.sh as ubuntu@3.134.252.73
+ DEBUG [51899cf4] Command: /usr/bin/env chmod 700 /tmp/git-ssh-pr1805_journey-production-duy.sh
+  INFO [51899cf4] Finished in 1.237 seconds with exit status 0 (successful).
+  INFO [945d6276] Running /usr/bin/env git ls-remote git@github.com:awesome-academy/pr1805_journey.git HEAD as ubuntu@3.134.252.73
+ DEBUG [945d6276] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-pr1805_journey-production-duy.sh" ; /usr/bin/env git ls-remote git@github.com:awesome-academy/pr1805_journey.git HEAD )
+ DEBUG [945d6276] 	40fc655113792c43ff86fdaee7ceb8f4477755b4
+ DEBUG [945d6276] 		HEAD
+  INFO [945d6276] Finished in 2.345 seconds with exit status 0 (successful).
+  INFO [c25d3aba] Running /usr/bin/env mkdir -p home/ubuntu/pr1805_journey/shared home/ubuntu/pr1805_journey/releases as ubuntu@3.134.252.73
+ DEBUG [c25d3aba] Command: /usr/bin/env mkdir -p home/ubuntu/pr1805_journey/shared home/ubuntu/pr1805_journey/releases
+  INFO [c25d3aba] Finished in 1.229 seconds with exit status 0 (successful).
+  INFO [fa4b2f63] Running /usr/bin/env mkdir -p home/ubuntu/pr1805_journey/shared/log home/ubuntu/pr1805_journey/shared/tmp/pids home/ubuntu/pr1805_journey/shared/tmp/cache home/ubuntu/pr1805_journey/shared/tmp/sockets home/ubuntu/pr1805_journey/shared/vendor/bundle home/ubuntu/pr1805_journey/shared/public/system home/ubuntu/pr1805_journey/shared/public/uploads as ubuntu@3.134.252.73
+ DEBUG [fa4b2f63] Command: /usr/bin/env mkdir -p home/ubuntu/pr1805_journey/shared/log home/ubuntu/pr1805_journey/shared/tmp/pids home/ubuntu/pr1805_journey/shared/tmp/cache home/ubuntu/pr1805_journey/shared/tmp/sockets home/ubuntu/pr1805_journey/shared/vendor/bundle home/ubuntu/pr1805_journey/shared/public/system home/ubuntu/pr1805_journey/shared/public/uploads
+  INFO [fa4b2f63] Finished in 1.223 seconds with exit status 0 (successful).
+  INFO [5f5ee801] Running /usr/bin/env mkdir -p home/ubuntu/pr1805_journey/shared/config as ubuntu@3.134.252.73
+ DEBUG [5f5ee801] Command: /usr/bin/env mkdir -p home/ubuntu/pr1805_journey/shared/config
+  INFO [5f5ee801] Finished in 1.400 seconds with exit status 0 (successful).
+ DEBUG [b546a51f] Running [ -f home/ubuntu/pr1805_journey/shared/config/database.yml ] as ubuntu@3.134.252.73
+ DEBUG [b546a51f] Command: [ -f home/ubuntu/pr1805_journey/shared/config/database.yml ]
+ DEBUG [b546a51f] Finished in 1.058 seconds with exit status 1 (failed).
+ ERROR linked file home/ubuntu/pr1805_journey/shared/config/database.yml does not exist on 3.134.252.73
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-12-05 10:46:02 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [6940e371] Running /usr/bin/env mkdir -p /tmp as ubuntu@3.134.252.73
+ DEBUG [6940e371] Command: /usr/bin/env mkdir -p /tmp
+  INFO [6940e371] Finished in 4.882 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-pr1805_journey-production-duy.sh 0.0%
+  INFO Uploading /tmp/git-ssh-pr1805_journey-production-duy.sh 100.0%
+  INFO [77418096] Running /usr/bin/env chmod 700 /tmp/git-ssh-pr1805_journey-production-duy.sh as ubuntu@3.134.252.73
+ DEBUG [77418096] Command: /usr/bin/env chmod 700 /tmp/git-ssh-pr1805_journey-production-duy.sh
+  INFO [77418096] Finished in 1.230 seconds with exit status 0 (successful).
+  INFO [b440ebf3] Running /usr/bin/env git ls-remote git@github.com:awesome-academy/pr1805_journey.git HEAD as ubuntu@3.134.252.73
+ DEBUG [b440ebf3] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-pr1805_journey-production-duy.sh" ; /usr/bin/env git ls-remote git@github.com:awesome-academy/pr1805_journey.git HEAD )
+ DEBUG [b440ebf3] 	Warning: Permanently added the RSA host key for IP address '140.82.113.4' to the list of known hosts.
+ DEBUG [b440ebf3] 	
+ DEBUG [b440ebf3] 	40fc655113792c43ff86fdaee7ceb8f4477755b4
+ DEBUG [b440ebf3] 		HEAD
+  INFO [b440ebf3] Finished in 3.071 seconds with exit status 0 (successful).
+  INFO [ff77d712] Running /usr/bin/env mkdir -p home/ubuntu/pr1805_journey/shared home/ubuntu/pr1805_journey/releases as ubuntu@3.134.252.73
+ DEBUG [ff77d712] Command: /usr/bin/env mkdir -p home/ubuntu/pr1805_journey/shared home/ubuntu/pr1805_journey/releases
+  INFO [ff77d712] Finished in 1.825 seconds with exit status 0 (successful).
+  INFO [e2809d99] Running /usr/bin/env mkdir -p home/ubuntu/pr1805_journey/shared/log home/ubuntu/pr1805_journey/shared/tmp/pids home/ubuntu/pr1805_journey/shared/tmp/cache home/ubuntu/pr1805_journey/shared/tmp/sockets home/ubuntu/pr1805_journey/shared/vendor/bundle home/ubuntu/pr1805_journey/shared/public/system home/ubuntu/pr1805_journey/shared/public/uploads as ubuntu@3.134.252.73
+ DEBUG [e2809d99] Command: /usr/bin/env mkdir -p home/ubuntu/pr1805_journey/shared/log home/ubuntu/pr1805_journey/shared/tmp/pids home/ubuntu/pr1805_journey/shared/tmp/cache home/ubuntu/pr1805_journey/shared/tmp/sockets home/ubuntu/pr1805_journey/shared/vendor/bundle home/ubuntu/pr1805_journey/shared/public/system home/ubuntu/pr1805_journey/shared/public/uploads
+  INFO [e2809d99] Finished in 1.149 seconds with exit status 0 (successful).
+  INFO [ef6dbf31] Running /usr/bin/env mkdir -p home/ubuntu/pr1805_journey/shared/config as ubuntu@3.134.252.73
+ DEBUG [ef6dbf31] Command: /usr/bin/env mkdir -p home/ubuntu/pr1805_journey/shared/config
+  INFO [ef6dbf31] Finished in 1.332 seconds with exit status 0 (successful).
+ DEBUG [b384d79f] Running [ -f home/ubuntu/pr1805_journey/shared/config/database.yml ] as ubuntu@3.134.252.73
+ DEBUG [b384d79f] Command: [ -f home/ubuntu/pr1805_journey/shared/config/database.yml ]
+ DEBUG [b384d79f] Finished in 0.890 seconds with exit status 0 (successful).
+ DEBUG [ece4b862] Running [ -f home/ubuntu/pr1805_journey/current/REVISION ] as ubuntu@3.134.252.73
+ DEBUG [ece4b862] Command: [ -f home/ubuntu/pr1805_journey/current/REVISION ]
+ DEBUG [ece4b862] Finished in 1.140 seconds with exit status 1 (failed).
+ DEBUG [3528b094] Running [ -f home/ubuntu/pr1805_journey/repo/HEAD ] as ubuntu@3.134.252.73
+ DEBUG [3528b094] Command: [ -f home/ubuntu/pr1805_journey/repo/HEAD ]
+ DEBUG [3528b094] Finished in 1.223 seconds with exit status 1 (failed).
+ DEBUG [ac837b67] Running if test ! -d home/ubuntu/pr1805_journey; then echo "Directory does not exist 'home/ubuntu/pr1805_journey'" 1>&2; false; fi as ubuntu@3.134.252.73
+ DEBUG [ac837b67] Command: if test ! -d home/ubuntu/pr1805_journey; then echo "Directory does not exist 'home/ubuntu/pr1805_journey'" 1>&2; false; fi
+ DEBUG [ac837b67] Finished in 1.235 seconds with exit status 0 (successful).
+  INFO [1b117a74] Running /usr/bin/env git clone --mirror git@github.com:awesome-academy/pr1805_journey.git home/ubuntu/pr1805_journey/repo as ubuntu@3.134.252.73
+ DEBUG [1b117a74] Command: cd home/ubuntu/pr1805_journey && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-pr1805_journey-production-duy.sh" ; /usr/bin/env git clone --mirror git@github.com:awesome-academy/pr1805_journey.git home/ubuntu/pr1805_journey/repo )
+ DEBUG [1b117a74] 	Cloning into bare repository 'home/ubuntu/pr1805_journey/repo'...
+ DEBUG [1b117a74] 	
+ DEBUG [1b117a74] 	remote: Enumerating objects: 303, done.[K
+ DEBUG [1b117a74] 	
+ DEBUG [1b117a74] 	remote: Counting objects:   0% (1/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:   1% (4/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:   2% (7/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:   3% (10/303)[K
+ DEBUG [1b117a74] 	remote: Cou
+ DEBUG [1b117a74] 	nting objects:   4% (13/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:   5% (16/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:   6% (19/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:   7% (22/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:   8% (25/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:   9% (28/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  10% (31/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  11% (34/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  12% (37/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  13% (40/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  14% (43/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  15% (46/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  16% (49/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  17% (52/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  18% (55/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  19% (58/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  20% (61/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  21% (64/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  22% (67/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  23% (70/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  24% (73/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  25% (76/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  26% (79/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  27% (82/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  28% (85/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  29% (88/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  30% (91/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  31% (94/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  32% (97/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  33% (100/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  34% (104/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  35% (107/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  36% (110/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  37% (113/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  38% (116/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  39% (119/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  40% (122/3
+ DEBUG [1b117a74] 	03)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  41% (125/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  42% (128/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  43% (131/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  44% (1
+ DEBUG [1b117a74] 	34/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  45% (137/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  46% (140/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  47% (143/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  48
+ DEBUG [1b117a74] 	% (146/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  49% (149/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  50% (152/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  51% (155/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:
+ DEBUG [1b117a74] 	  52% (158/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  53% (161/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  54% (164/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  55% (167/303)[K
+ DEBUG [1b117a74] 	remote: Counting obje
+ DEBUG [1b117a74] 	cts:  56% (170/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  57% (173/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  58% (176/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  59% (179/303)[K
+ DEBUG [1b117a74] 	remote: Counting 
+ DEBUG [1b117a74] 	objects:  60% (182/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  61% (185/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  62% (188/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  63% (191/303)[K
+ DEBUG [1b117a74] 	remote: Count
+ DEBUG [1b117a74] 	ing objects:  64% (194/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  65% (197/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  66% (200/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  67% (204/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  68% (207/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  69% (210/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  70% (213/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  71% (216/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  72% (219/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  73% (222/3
+ DEBUG [1b117a74] 	03)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  74% (225/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  75% (228/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  76% (231/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  77% (2
+ DEBUG [1b117a74] 	34/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  78% (237/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  79% (240/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  80% (243/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  81
+ DEBUG [1b117a74] 	% (246/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  82% (249/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  83% (252/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  84% (255/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  85% (258/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  86% (261/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  87% (264/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  88% (267/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  89% (270/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  90% (273/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  91% (276/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  92% (279/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  93% (282/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  94% (285/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  95% (288/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  96% (291/3
+ DEBUG [1b117a74] 	03)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  97% (294/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  98% (297/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects:  99% (300/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects: 100% (3
+ DEBUG [1b117a74] 	03/303)[K
+ DEBUG [1b117a74] 	remote: Counting objects: 100% (303/303), done.[K
+ DEBUG [1b117a74] 	
+ DEBUG [1b117a74] 	remote: Compressing objects:   0% (1/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:   1% (3/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:   2% (5/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:   3% (7/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:   4% (9/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:   5% (11/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:   6% (13/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:   7% (15/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:   8% (17/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:   9% (19/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  10% (21/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  11% (23/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  12% (25/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  13% (27/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  14% (29/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  15% (31/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  16% (33/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  17% (35/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  18% (37/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  19% (39/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  20% (41/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  21% (43/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  22% (45/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  23% (47/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  24% (49/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  25% (51/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  26% (53/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  27% (55/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  28% (57/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  29% (59/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  30% (61/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  31% (63/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  32% (65/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  33% (67/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  34% (70/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  35% (72/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  36% (74/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  37% (76/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  38% (78/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  39% (80/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  40% (82/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  41% (84/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  42% (86/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  43% (88/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  44% (90/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  45% (92/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  46% (94/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  47% (96/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  48% (98/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  49% (100/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  50% (102/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  51% (104/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  52% (106/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  53% (108/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  54% (110/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  55% (112/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  56% (114/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  57% (116/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  58% (118/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  59% (120/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  60% (122/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  61% (124/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  62% (126/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  63% (128/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  64% (130/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  65% (132/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  66% (134/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  67% (137/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  68% (139/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  69% (141/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  70% (143/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  71% (145/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  72% (147/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  73% (149/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  74% (151/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  75% (153/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  76% (155/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  77% (157/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  78% (159/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  79% (161/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  80% (163/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  81% (165/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  82% (167/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  83% (169/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  84% (171/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  85% (173/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  86% (175/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  87% (177/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  88% (179/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  89% (181/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  90% (183/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  91% (185/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  92% (187/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  93% (189/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  94% (191/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  95% (193/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  96% (195/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  97% (197/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  98% (199/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects:  99% (201/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects: 100% (203/203)[K
+ DEBUG [1b117a74] 	remote: Compressing objects: 100% (203/203), done.[K
+ DEBUG [1b117a74] 	
+ DEBUG [1b117a74] 	Receiving objects:   0% (1/1446)   
+ DEBUG [1b117a74] 	Receiving objects:   1% (15/1446)   
+ DEBUG [1b117a74] 	Receiving objects:   2% (29/1446)   
+ DEBUG [1b117a74] 	Receiving objects:   3% (44/1446)   
+ DEBUG [1b117a74] 	Receiving objects:   4% (58/1446)   
+ DEBUG [1b117a74] 	Receiving objects:   5% (73/1446)   
+ DEBUG [1b117a74] 	Receiving objects:   6% (87/1446)   
+ DEBUG [1b117a74] 	Receiving objects:   7% (102/1446)   
+ DEBUG [1b117a74] 	Receiving objects:   8% (116/1446)   
+ DEBUG [1b117a74] 	Receiving objects:   9% (131/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  10% (145/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  11% (160/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  12% (174/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  13% (188/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  14% (203/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  15% (217/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  16% (232/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  17% (246/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  18% (261/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  19% (275/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  20% (290/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  21% (304/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  22% (319/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  23% (333/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  24% (348/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  25% (362/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  26% (376/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  27% (391/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  28% (405/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  29% (420/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  30% (434/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  31% (449/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  32% (463/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  33% (478/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  34% (492/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  35% (507/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  36% (521/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  37% (536/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  38% (550/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  39% (564/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  40% (579/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  41% (593/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  42% (608/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  43% (622/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  44% (637/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  45% (651/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  46% (666/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  47% (680/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  48% (695/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  49% (709/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  50% (723/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  51% (738/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  52% (752/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  53% (767/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  54% (781/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  55% (796/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  56% (810/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  57% (825/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  58% (839/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  59% (854/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  60% (868/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  61% (883/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  62% (897/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  63% (911/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  64% (926/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  65% (940/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  66% (955/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  67% (969/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  68% (984/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  69% (998/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  70% (1013/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  71% (1027/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  72% (1042/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  73% (1056/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  74% (1071/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  75% (1085/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  76% (1099/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  77% (1114/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  78% (1128/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  79% (1143/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  80% (1157/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  81% (1172/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  82% (1186/1446)   
+ DEBUG [1b117a74] 	remote: Total 1446 (delta 151), reused 208 (delta 94), pack-reused 1143[K
+ DEBUG [1b117a74] 	
+ DEBUG [1b117a74] 	Receiving objects:  83% (1201/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  84% (1215/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  85% (1230/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  86% (1244/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  87% (1259/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  88% (1273/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  89% (1287/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  90% (1302/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  91% (1316/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  92% (1331/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  93% (1345/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  94% (1360/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  95% (1374/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  96% (1389/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  97% (1403/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  98% (1418/1446)   
+ DEBUG [1b117a74] 	Receiving objects:  99% (1432/1446)   
+ DEBUG [1b117a74] 	Receiving objects: 100% (1446/1446)   
+ DEBUG [1b117a74] 	Receiving objects: 100% (1446/1446), 9.83 MiB | 0 bytes/s, done.
+ DEBUG [1b117a74] 	
+ DEBUG [1b117a74] 	Resolving deltas:   0% (0/799)   
+ DEBUG [1b117a74] 	Resolving deltas:   1% (11/799)   
+ DEBUG [1b117a74] 	Resolving deltas:   3% (28/799)   
+ DEBUG [1b117a74] 	Resolving deltas:   4% (35/799)   
+ DEBUG [1b117a74] 	Resolving deltas:   5% (40/799)   
+ DEBUG [1b117a74] 	Resolving deltas:   6% (50/799)   
+ DEBUG [1b117a74] 	Resolving deltas:   8% (64/799)   
+ DEBUG [1b117a74] 	Resolving deltas:   9% (74/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  10% (81/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  11% (88/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  12% (96/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  13% (110/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  14% (113/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  15% (120/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  16% (131/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  18% (147/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  19% (152/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  23% (186/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  24% (192/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  26% (210/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  28% (229/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  29% (237/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  30% (240/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  31% (248/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  32% (256/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  33% (264/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  34% (275/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  35% (280/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  36% (293/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  37% (300/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  38% (306/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  39% (313/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  40% (320/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  41% (331/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  45% (362/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  46% (368/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  49% (392/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  50% (402/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  52% (418/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  57% (457/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  60% (482/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  61% (495/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  62% (499/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  63% (508/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  64% (518/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  66% (528/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  69% (557/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  71% (568/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  72% (576/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  73% (588/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  74% (592/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  75% (602/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  76% (611/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  77% (618/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  78% (625/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  79% (634/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  80% (643/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  81% (648/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  83% (668/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  84% (675/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  85% (681/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  86% (691/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  87% (696/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  88% (704/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  89% (714/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  90% (722/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  91% (729/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  92% (736/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  93% (748/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  94% (755/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  95% (764/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  96% (769/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  97% (778/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  98% (790/799)   
+ DEBUG [1b117a74] 	Resolving deltas:  99% (794/799)   
+ DEBUG [1b117a74] 	Resolving deltas: 100% (799/799)   
+ DEBUG [1b117a74] 	Resolving deltas: 100% (799/799), done.
+ DEBUG [1b117a74] 	
+ DEBUG [1b117a74] 	Checking connectivity... 
+ DEBUG [1b117a74] 	done.
+ DEBUG [1b117a74] 	
+  INFO [1b117a74] Finished in 3.597 seconds with exit status 0 (successful).
+ DEBUG [d8cbccb4] Running if test ! -d home/ubuntu/pr1805_journey/repo; then echo "Directory does not exist 'home/ubuntu/pr1805_journey/repo'" 1>&2; false; fi as ubuntu@3.134.252.73
+ DEBUG [d8cbccb4] Command: if test ! -d home/ubuntu/pr1805_journey/repo; then echo "Directory does not exist 'home/ubuntu/pr1805_journey/repo'" 1>&2; false; fi
+ DEBUG [d8cbccb4] 	Directory does not exist 'home/ubuntu/pr1805_journey/repo'
+ DEBUG [d8cbccb4] 	

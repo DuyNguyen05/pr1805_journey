@@ -1,0 +1,39 @@
+<section class="articles-area section-padding-0-100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="mt-100">
+          <div class="login-panel panel panel-default">
+            <h1><div class="panel-heading">New Post</div></h1>
+            <div class="panel-body">
+              <%= form_for @post do |f| %>
+                <%= render "shared/error_post_messages",object: f.object %>
+                <fieldset>
+                  <div class="form-group">
+                    <%= f.label :title %>
+                    <%= f.text_field :title, placeholder: "Title..." , class: "form_control" %>
+                  </div>
+                  <div class="form-group">
+                    <%= f.select :place_id, @place_options, {}, class: "ui fluid  selection dropdown" %>
+                  </div>
+                  <div class="form-group">
+                    <%= f.text_area :content, placeholder: "Content...", class: "tinymce", rows: 10, cols: 10 %>
+                  </div>
+                  <div class="form-group">
+                    <%= image_tag @post.picture if @post.picture? %>
+                    <%= f.file_field :picture, accept: "image/jpeg,image/gif,image/png" %>
+                  </div>
+                  <%= f.hidden_field :status, value: :archived %>
+                </fieldset>
+                <%= f.submit "Create Post", class: "btn btn-primary" %>
+              <% end %>
+              <%= link_to "Quay lai", root_path, class: "btn btn-primary" %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <%= render "shared/place_is_max_post" %>
+    </div>
+  </div>
+</section>
+

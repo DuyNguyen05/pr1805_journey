@@ -1,4 +1,3 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
 // Any JavaScript/Coffee file within this directory, lib/assets/javascripts, or any plugin's
@@ -10,7 +9,37 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require rails-ujs
-//= require activestorage
-//= require turbolinks
+//= require jquery3
+//= require_tree ./lib
+//= require jquery
 //= require_tree .
+//= require scroll-up
+//= require popper
+//= require magnific-popup
+//= require bootstrap
+//= require rails-ujs
+//= require tinymce
+//= require turbolinks
+//= require_directory .
+$(document).on('turbolinks:load', function(){
+  $('#user_picture').bind('change', function() {
+    var size_in_megabytes = this.files[0].size/1024/1024;
+    if (size_in_megabytes > 5) {
+      alert('Maximum file size is 5MB. Please choose a smaller file.');
+    }
+  });
+  tinyMCE.init({
+    selector: "textarea.tinymce"
+  });
+  $('#star-rating').raty({
+    path: '/assets/',
+    scoreName: 'rate[star]'
+  });
+  $('.star-rating').raty({
+    path: '/assets/',
+    readOnly: true,
+    score: function() {
+      return $(this).attr('data-score');
+    }
+  });
+})
